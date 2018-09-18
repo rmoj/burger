@@ -1,0 +1,42 @@
+<div id='container'>
+  <div>
+    <img src="/assets/img/burger.jpg" alt="burger">
+  </div>
+  <h2>Eat da burger</h2>
+  <div id="data">
+    <div id='toEatBox'>
+      <ol id="toEat">
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li>
+          {{burger_name}}
+
+          <button id="devour" data-id="{{id}}">
+            Devour
+          </button>
+
+        </li>
+        {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
+    <div id='eatenBox'>
+      <ol id="eaten">
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>
+          {{burger_name}}
+        </li>
+        {{/if}}
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+  <div>
+    <input type="text" name="burgername">
+  </div>
+  <div>
+    <button id="submit">Submit</button>
+  </div>
+
+</div>
