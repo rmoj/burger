@@ -1,6 +1,6 @@
 # Eat da burger
 
-Eat da burger is a burger logger which demonstrates how to use with MySQL, Node, Express, and Handlebars with a custom-made ORM, using the MVC design pattern.
+Eat da burger is a burger logger app which built on MySQL, Node, Express, and Handlebars using a custom-made ORM and the MVC design pattern.
 
 ## Requirements
 
