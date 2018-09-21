@@ -1,17 +1,18 @@
 <div id='container'>
-  <div>
+  <div id="imgBurger">
     <img src="/assets/img/burger.jpg" alt="burger">
   </div>
   <h2>Eat da burger</h2>
   <div id="data">
     <div id='toEatBox'>
+      <p class='boxtitle'>Eat me</p>
       <ol id="toEat">
         {{#each burgers}}
         {{#unless devoured}}
         <li>
           {{burger_name}}
 
-          <button class="devour" data-id="{{id}}">
+          <button class="devour" id="{{id}}">
             Devour
           </button>
 
@@ -21,6 +22,7 @@
       </ol>
     </div>
     <div id='eatenBox'>
+      <p class='boxtitle'>Eaten</p>
       <ol id="eaten">
         {{#each burgers}}
         {{#if devoured}}
