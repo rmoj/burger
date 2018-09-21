@@ -30,13 +30,6 @@ router.put('/api/burgers/:id', function(req, res) {
   var id = req.params.id;
   var devoured = JSON.parse(req.body.devoured);
 
-  // console.log('type:' + typeof req.body.devoured);
-  // if (req.body.devoured === 'true') {
-  //   devoured = true;
-  // } else {
-  //   devoured = false;
-  // }
-
   burger.update('devoured', devoured, id, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
