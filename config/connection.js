@@ -15,12 +15,6 @@ if (process.env.CLEARDB_DATABASE_URL) {
   });
 }
 
-// HOST = us-cdbr-iron-east-01.cleardb.net
-// PORT = 3306
-// USERNAME = b7c146a9a66aa4
-// PASSWORD = aab43920
-// DATABASE = heroku_23aec9798cb77c3
-
 // Make connection.
 connection.connect(function(err) {
   if (err) {
